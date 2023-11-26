@@ -34,20 +34,20 @@ public class UIAnimController : MonoBehaviour
     {
         if(!isColorEnable)
         {
-            /*foreach (GameObject g in colors)
+            foreach (GameObject g in colors)
             {
                 g.SetActive(true);
-            }*/
-            coloranimation.Play("On");
+            }
+          //  coloranimation.Play("On");
             isColorEnable = true;
         }
         else
         {
-            /*foreach (GameObject g in colors)
+            foreach (GameObject g in colors)
             {
                 g.SetActive(false);
-            }*/
-            coloranimation.Play("Off");
+            }
+          //  coloranimation.Play("Off");
             isColorEnable = false;
         }
     }
