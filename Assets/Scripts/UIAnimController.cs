@@ -105,5 +105,18 @@ public class UIAnimController : MonoBehaviour
         }
     }
 
+    public void ChangeWhiteColor()
+    {
+        isDefaultColor = true;
+        if (isDefaultColor)
+        {
+            if (primaryColor.color != Color.white)
+            {
+                primaryColor.color = Color.white;
+                isDefaultColor = false;
+            }
+        }
+    }
+
 }
 

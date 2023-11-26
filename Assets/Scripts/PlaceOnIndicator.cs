@@ -41,8 +41,9 @@ public class PlaceOnIndicator : MonoBehaviour
         {
             var hitpose = hits[0].pose;
             placementIndication.transform.SetPositionAndRotation(hitpose.position, hitpose.rotation);
+            placementIndication.SetActive(true);
 
-            if(!placementIndication.activeInHierarchy && markerstatus)
+            if (!placementIndication.activeInHierarchy && markerstatus)
             {
                 placementIndication.SetActive(true);
             }
