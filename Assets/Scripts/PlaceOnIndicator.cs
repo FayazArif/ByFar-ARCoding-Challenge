@@ -26,7 +26,7 @@ public class PlaceOnIndicator : MonoBehaviour
     private void Awake()
     {
         aRRaycastManager = GetComponent<ARRaycastManager>();
-        placementIndication.SetActive(true);
+        placementIndication.SetActive(false);
 
     }
 
