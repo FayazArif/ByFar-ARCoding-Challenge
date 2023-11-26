@@ -18,6 +18,8 @@ public class UIAnimController : MonoBehaviour
     Material primaryColor;
     Image openandclosebutton;
     Image selectedIcon;
+    [SerializeField]
+    Animator coloranimation;
 
     private void Start()
     {
@@ -32,18 +34,20 @@ public class UIAnimController : MonoBehaviour
     {
         if(!isColorEnable)
         {
-            foreach (GameObject g in colors)
+            /*foreach (GameObject g in colors)
             {
                 g.SetActive(true);
-            }
+            }*/
+            coloranimation.Play("On");
             isColorEnable = true;
         }
         else
         {
-            foreach (GameObject g in colors)
+            /*foreach (GameObject g in colors)
             {
                 g.SetActive(false);
-            }
+            }*/
+            coloranimation.Play("Off");
             isColorEnable = false;
         }
     }
