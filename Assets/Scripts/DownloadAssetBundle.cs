@@ -17,7 +17,8 @@ public class DownloadAssetBundle : MonoBehaviour
 
     private IEnumerator DownloadAssetBundleFromServer()
     {
-        string url = "https://github.com/ZetakharcoX/ByFar--ARCoding-Challenge/raw/main/AssetsBundles/carwithui";
+        string url = "https://github.com/FayazArif/ByFar-ARCoding-Challenge/raw/main/AssetsBundles/carwithui";
+       
         using (UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(url))
         {
             yield return www.SendWebRequest();
